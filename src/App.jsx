@@ -1,7 +1,9 @@
-import React from "react";
-import "./App.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "Labas";
+  }, []);
   return (
     <div>
       <h1>Hello</h1>
