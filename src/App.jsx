@@ -1,12 +1,18 @@
 import { useEffect } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainPage from "./Components/MainPage/MainPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainPage />,
+  },
+]);
 
 function App() {
-  useEffect(() => {
-    document.title = "Labas";
-  }, []);
   return (
     <div>
-      <h1>Hello</h1>
+      <RouterProvider router={router} />
     </div>
   );
 }

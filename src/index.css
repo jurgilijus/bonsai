@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Outfit", sans-serif;
+}
+@media screen and (min-width: 992px) {
+  .mobile-menu-btn,
+  .mobile-menu-conteiner {
+    display: none;
+  }
 }
