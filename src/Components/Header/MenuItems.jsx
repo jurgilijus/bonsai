@@ -1,3 +1,5 @@
+import image from "../../assets/calendar.png";
+
 export const webMenu = [
   {
     title: "Product",
@@ -55,14 +57,16 @@ export const webMenu = [
       },
       {
         subTitle: "What's new",
-        img: "image",
         navigation: [
+          {
+            img: [image],
+          },
           {
             title: "Branded scheduling portal",
             url: "https://www.hellobonsai.com/crm",
           },
           {
-            title: "Learn more",
+            learnMore: "Learn more",
             url: "https://www.hellobonsai.com/scheduling",
           },
         ],
@@ -202,6 +206,8 @@ export const webMenu = [
             url: "https://www.hellobonsai.com/forms",
           },
         ],
+        seeAll: "See all templates",
+        seeAllUrl: "https://www.hellobonsai.com/templates/contracts",
       },
       {
         subTitle: "Proposal Templates",
@@ -257,6 +263,8 @@ export const webMenu = [
             url: "https://www.hellobonsai.com/forms",
           },
         ],
+        seeAll: "See all templates",
+        seeAllUrl: "https://www.hellobonsai.com/templates/proposals",
       },
       {
         subTitle: "Invoice Templates",
@@ -311,6 +319,8 @@ export const webMenu = [
             url: "https://www.hellobonsai.com/forms",
           },
         ],
+        seeAll: "See all templates",
+        seeAllUrl: "https://www.hellobonsai.com/templates/invoices",
       },
       {
         subTitle: "Quote Templates",
@@ -365,6 +375,8 @@ export const webMenu = [
             url: "https://www.hellobonsai.com/forms",
           },
         ],
+        seeAll: "See all templates",
+        seeAllUrl: "https://www.hellobonsai.com/templates/quotes",
       },
       {
         subTitle: "Scope of Work Templates",
@@ -419,6 +431,8 @@ export const webMenu = [
             url: "https://www.hellobonsai.com/forms",
           },
         ],
+        seeAll: "See all templates",
+        seeAllUrl: "https://www.hellobonsai.com/templates/scopes-of-work",
       },
       {
         subTitle: "Brief Templates",
@@ -473,6 +487,8 @@ export const webMenu = [
             url: "https://www.hellobonsai.com/forms",
           },
         ],
+        seeAll: "See all templates",
+        seeAllUrl: "https://www.hellobonsai.com/templates/briefs",
       },
       {
         subTitle: "Form Templates",
@@ -527,6 +543,8 @@ export const webMenu = [
             url: "https://www.hellobonsai.com/forms",
           },
         ],
+        seeAll: "See all templates",
+        seeAllUrl: "https://www.hellobonsai.com/templates/forms",
       },
     ],
   },
