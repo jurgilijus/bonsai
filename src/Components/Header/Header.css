@@ -291,6 +291,7 @@ a:hover {
   height: 21.5rem;
   display: none;
   color: #65816d;
+  overflow: hidden;
   /* background-color: #22ad01; */
 }
 .web-menu:hover .template-conteiner {
@@ -362,7 +363,6 @@ a:hover {
   position: absolute;
   width: 100%;
   background-color: white;
-  display: none;
 }
 .subheader-conteiner {
   display: flex;
