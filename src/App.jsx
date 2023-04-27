@@ -1,6 +1,7 @@
-import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "./Components/MainPage/MainPage";
+
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <RouterProvider router={router} />
     </div>
   );

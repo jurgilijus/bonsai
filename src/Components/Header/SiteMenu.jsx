@@ -12,7 +12,11 @@ function SiteMenu({ title, subTitle }) {
   return (
     <div className="web-menu">
       <p>{title}</p>
-      <div className="web-submenu">
+      <div
+        className={
+          title === "Pricing" || title === "Reviews" ? "hidden" : "web-submenu"
+        }
+      >
         {title === "Templates" ? (
           <div className="template-conteiner">
             {subTitle.map((template, index) => {
@@ -54,11 +58,7 @@ function SiteMenu({ title, subTitle }) {
         ) : (
           <div className="web-submenu-conteiner">
             {subTitle.map((titleText, index) => {
-              if (
-                title !== "Pricing" &&
-                title !== "Reviews" &&
-                title !== "Templates"
-              ) {
+              if (title !== "Pricing" && title !== "Reviews") {
                 return (
                   <div key={index}>
                     <p className="web-submenu-subtitle">{titleText.subTitle}</p>

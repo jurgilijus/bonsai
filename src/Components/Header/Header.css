@@ -1,14 +1,26 @@
 .header-conteiner {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+}
+.header {
   margin: auto;
   padding: 1.3rem 0rem;
   padding-bottom: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
-  background-color: white;
+  width: 80rem;
   border-bottom: 1px solid #d5dbd7;
-  max-width: 80rem;
+  background-color: white;
+  margin: 0rem 3rem;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .mobile-menu-conteiner {
   top: 5.5rem;
@@ -144,6 +156,9 @@
 .hidden {
   display: none;
 }
+.transparent {
+  background-color: transparent;
+}
 .flex {
   display: flex;
 }
@@ -169,17 +184,19 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  /* background-color: #22ad01; */
 }
 .web-submenu {
   position: absolute;
-  top: 4.4rem;
+  top: 4.5rem;
   left: 0;
   width: 100%;
   padding: 1.5rem 2.5rem;
   display: none;
   color: #65816d;
   cursor: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 .web-submenu-subtitle {
   padding: 2rem 0rem;
@@ -336,4 +353,46 @@ a:hover {
   margin: 1rem 0rem;
   position: absolute;
   left: 45%;
+}
+.subheader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  display: none;
+}
+.subheader-conteiner {
+  display: flex;
+  gap: 2rem;
+  width: 80rem;
+  padding: 0.5rem 0rem;
+  color: #d5dbd7;
+  background-color: white;
+  transition: all 0.4s;
+  z-index: 0;
+  margin: 0rem 3rem;
+}
+.subheader-text:hover {
+  color: #65816d;
+}
+.shrink {
+  height: 0;
+  transform: translateY(-8rem);
+  /* box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.1); */
+  background-color: white;
+  width: 100%;
+  height: 56px;
+  z-index: -10;
+  transition: all 0.4s;
+}
+.home-conteiner {
+  max-width: 80rem;
+  margin: auto;
+}
+.home {
+  margin: 1rem 0rem;
+  max-width: 80rem;
 }
