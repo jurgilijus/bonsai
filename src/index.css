@@ -17,7 +17,8 @@ body {
   }
   .web-menu-conteiner,
   .header-btn-aligne,
-  .subheader {
+  .subheader,
+  .subheader-conteiner {
     box-shadow: none;
     display: flex;
     flex-direction: row;
