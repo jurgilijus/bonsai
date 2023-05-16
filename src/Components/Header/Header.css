@@ -7,15 +7,13 @@
 }
 .header {
   margin: auto;
-  padding: 1.3rem 0rem;
+  padding: 1.3rem 1rem;
   padding-bottom: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80rem;
-  border-bottom: 1px solid #d5dbd7;
   background-color: white;
-  margin: 0rem 3rem;
 }
 .sticky {
   position: fixed;

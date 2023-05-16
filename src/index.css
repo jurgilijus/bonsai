@@ -10,7 +10,27 @@ body {
   background-color: #ffffff;
   font-family: "Outfit", sans-serif;
 }
+@media screen and (min-width: 480px) {
+  .homepage-container .homepage-btn {
+    display: none;
+  }
+  .homepage-container .homepage-text {
+    margin: 1.5rem 0;
+  }
+  .homepage-container .sign-up-container {
+    display: flex;
+  }
+  .girl-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+}
 @media screen and (min-width: 992px) {
+  .header {
+    border-bottom: 1px solid #d5dbd7;
+    margin: 0rem 3rem;
+  }
   .mobile-menu-btn,
   .mobile-menu-conteiner {
     display: none;
