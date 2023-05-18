@@ -67,27 +67,73 @@
 .girl,
 .girl-background {
   position: absolute;
-  width: 100%;
   z-index: -10;
   bottom: 0;
 }
 .girl-container .branch {
-  left: 54%;
+  left: 50%;
   transform: translateX(-50%);
-  width: 120%;
+  width: 37.5rem;
   z-index: -11;
 }
 .girl-container .girl-background {
   background-color: #ee8146;
   left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
-  height: 70%;
+  top: 50%;
+  transform: translate(-50%, -39.5%);
+  width: 22rem;
+  height: 25rem;
   border-radius: 0 15% 0 15%;
 }
 .girl-container .girl {
   left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 22rem;
   border-radius: 0 0 0 14%;
+}
+.notification-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 37.5rem;
+}
+.girl-container .notification-container .notification {
+  position: absolute;
+  min-width: 196px;
+  min-height: 60px;
+  background-color: rgb(255, 255, 255, 0.85);
+  border-radius: 10px;
+  align-items: center;
+  padding: 14px 18px 14px 14px;
+  display: flex;
+  gap: 20px;
+}
+
+.notification-container .notification .notification-icon {
+  width: 2.5rem;
+}
+.notification-container .notification .notification-title {
+  color: #65816d;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 135%;
+}
+.notification-container .notification .notification-text {
+  color: #003c2f;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.girl-container .notification-container .position-absolute1 {
+  top: 14rem;
+  right: 3rem;
+}
+.girl-container .notification-container .position-absolute2 {
+  top: 22.5rem;
+  left: 4rem;
+}
+.girl-container .notification-container .position-absolute3 {
+  top: 25rem;
+  right: 3rem;
 }
