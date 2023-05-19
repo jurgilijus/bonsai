@@ -1,25 +1,31 @@
-.homepage-container {
+.homepage-alignment {
+  height: 80%;
+  width: 100%;
+}
+.homepage-alignment .homepage-container {
   padding: 1rem 1rem 2.5rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
 }
-.homepage-container .homepage-title {
-  font-size: 2.5rem;
+.homepage-alignment .homepage-container .homepage-title {
+  font-size: 2.25rem;
 }
-.homepage-container .homepage-title,
+.homepage-alignment .homepage-container .homepage-title,
 .homepage-text {
   text-align: center;
 }
-.homepage-container .homepage-text {
+.homepage-alignment .homepage-container .homepage-text {
   color: #65816d;
 }
-.homepage-container .homepage-btn {
+.homepage-alignment .homepage-container .homepage-btn {
   margin-top: 0.5rem;
   max-width: 7rem;
 }
 
-.homepage-container .sign-up-container {
+.homepage-alignment .homepage-container .sign-up-container {
   /* display: flex; */
   align-items: center;
   justify-content: center;
@@ -27,11 +33,11 @@
   border-radius: 2rem;
   position: relative;
   box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
-  margin: auto;
+  margin: 0 auto;
   display: none;
   z-index: -10;
 }
-.homepage-container .sign-up-container .email-sign-up-text {
+.homepage-alignment .sign-up-container .email-sign-up-text {
   background-color: transparent;
   border: 0 solid #000;
   margin-left: 1.25rem;
@@ -41,27 +47,15 @@
 .homepage-container .sign-up-container .homepage-btn-bigger {
   width: 12rem;
 }
-.section-1 {
-  position: relative;
-  z-index: -10;
-}
-.section-1 .section-1-background {
-  width: 100%;
-}
-.section-1 .section-1-icon {
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 20%;
-  width: 90%;
-  border-radius: 0.25rem;
-  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
-}
+
 .girl-container {
   position: relative;
-  height: 75%;
+  height: 100%;
   overflow: hidden;
   display: none;
+  margin-top: 2rem;
+  margin-bottom: -14rem;
+  z-index: 1;
 }
 .girl-container .branch,
 .girl,
@@ -72,6 +66,7 @@
 }
 .girl-container .branch {
   left: 50%;
+  top: 0;
   transform: translateX(-50%);
   width: 37.5rem;
   z-index: -11;
@@ -79,16 +74,16 @@
 .girl-container .girl-background {
   background-color: #ee8146;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -39.5%);
+  top: 10.63rem;
+  transform: translateX(-50%);
   width: 22rem;
   height: 25rem;
   border-radius: 0 15% 0 15%;
 }
 .girl-container .girl {
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  transform: translate(-50%, -20%);
   max-width: 22rem;
   border-radius: 0 0 0 14%;
 }
@@ -108,6 +103,7 @@
   padding: 14px 18px 14px 14px;
   display: flex;
   gap: 20px;
+  filter: drop-shadow(-30px 24px 11px #0000001a);
 }
 
 .notification-container .notification .notification-icon {
@@ -136,4 +132,20 @@
 .girl-container .notification-container .position-absolute3 {
   top: 25rem;
   right: 3rem;
+}
+.section-1 {
+  position: relative;
+  z-index: -10;
+}
+.section-1 .section-1-background {
+  width: 100%;
+}
+.section-1 .section-1-icon {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 20%;
+  width: 90%;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
 }
