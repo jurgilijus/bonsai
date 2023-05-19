@@ -10,7 +10,36 @@ body {
   background-color: #ffffff;
   font-family: "Outfit", sans-serif;
 }
+@media screen and (min-width: 480px) {
+  .homepage-alignment .homepage-container .homepage-btn {
+    display: none;
+  }
+  .homepage-container .homepage-text {
+    margin: 1.5rem 0;
+  }
+  .homepage-alignment .homepage-container .sign-up-container {
+    display: flex;
+  }
+  .girl-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .homepage-alignment .homepage-container .homepage-title {
+    font-size: 3.75rem;
+  }
+  .girl-container {
+    margin-bottom: -8rem;
+  }
+  .girl-container .branch {
+    width: 43.75rem;
+  }
+}
 @media screen and (min-width: 992px) {
+  .header {
+    border-bottom: 1px solid #d5dbd7;
+    margin: 0rem 3rem;
+  }
   .mobile-menu-btn,
   .mobile-menu-conteiner {
     display: none;
@@ -26,5 +55,39 @@ body {
   }
   .header-conteiner {
     box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  .homepage-alignment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .homepage-alignment .homepage-container .homepage-title,
+  .homepage-text {
+    text-align: left;
+  }
+  .homepage-alignment {
+    max-width: 80rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3.4rem;
+    overflow: hidden;
+    padding: 0rem 2rem;
+  }
+  .homepage-alignment .homepage-container {
+    max-width: 40%;
+    position: relative;
+    top: 9.5rem;
+  }
+  .girl-container {
+    max-width: 50%;
+    overflow: visible;
+  }
+  .homepage-alignment .homepage-container .homepage-title {
+    font-size: 3.58rem;
+    line-height: 100%;
+  }
+  .homepage-alignment .homepage-container .sign-up-container {
+    margin: 0 0;
   }
 }

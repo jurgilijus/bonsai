@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
-// import HomePage from "../../HomePage";
+import HomePage from "../HomePage/HomePage";
 
 // CSS
 import "./MainPage.css";
@@ -10,8 +10,7 @@ function MainPage() {
   return (
     <div className="mainPage-conteiner">
       <Header />
-
-      {/* <HomePage /> */}
+      <HomePage />
     </div>
   );
 }
